@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: 7618663b-f86f-49ec-8981-e7bb40bc102e
+name: 'Training Playground'
+mail: admin@example.com
+slogan: 'DrupalCon Atlanta 2025'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null
