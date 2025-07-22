@@ -11867,6 +11867,7 @@
         }
     ],
     "aliases": [],
+    "minimum-stability": "alpha",
     "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
