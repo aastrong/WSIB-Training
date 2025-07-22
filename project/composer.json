@@ -28,6 +28,7 @@
         "drupal/drupal": "*"
     },
     "prefer-stable": true,
+    "minimum-stability": "alpha",
     "config": {
         "allow-plugins": {
             "composer/installers": true,
