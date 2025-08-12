@@ -1,0 +1,30 @@
+uuid: 8c992225-d8b4-4c3a-9bf1-8a271f884df8
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.card_desktop
+    - image.style.card_mobile
+    - image.style.card_tablet
+  theme:
+    - olivero
+id: card
+label: Card
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: card_desktop
+    breakpoint_id: olivero.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_tablet
+    breakpoint_id: olivero.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: card_mobile
+    breakpoint_id: olivero.sm
+    multiplier: 1x
+breakpoint_group: olivero
+fallback_image_style: card_desktop

@@ -1,0 +1,9 @@
+uuid: 730c7830-a287-44e2-8584-b585da85930e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Recipe Type'
+vid: recipe_type
+description: ' Different types of recipes to sort by'
+weight: 0
+new_revision: false

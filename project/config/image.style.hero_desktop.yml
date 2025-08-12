@@ -1,0 +1,17 @@
+uuid: 038d2536-b6c6-46bd-8c75-b4dd907acd04
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_desktop
+label: 'Hero Desktop'
+effects:
+  6034a50f-b627-475f-b920-f14936535290:
+    uuid: 6034a50f-b627-475f-b920-f14936535290
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 600
+      crop_type: focal_point

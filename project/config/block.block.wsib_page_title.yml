@@ -1,0 +1,20 @@
+uuid: bffe2db0-73ea-4d15-9b54-19b62ad67071
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wsib
+_core:
+  default_config_hash: 8N0sR-PBtbAfd6__NR4rwp-LYmeKoh-kkI_1mwbgR5Y
+id: wsib_page_title
+theme: wsib
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

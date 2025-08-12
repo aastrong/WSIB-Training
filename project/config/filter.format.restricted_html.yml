@@ -1,12 +1,14 @@
 uuid: e2890f5b-dda8-4f85-bc0b-e3f6e8128ed5
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - slick
 _core:
   default_config_hash: QiKqQS_YGAT3Qr4vaAgZICJknm-MGCzt_xBAMqg-tRM
 name: 'Restricted HTML'
 format: restricted_html
-weight: 1
+weight: -8
 filters:
   filter_autop:
     id: filter_autop
@@ -30,3 +32,11 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''

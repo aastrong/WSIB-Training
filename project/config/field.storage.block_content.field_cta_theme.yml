@@ -1,0 +1,27 @@
+uuid: f8c606fc-d7e4-4cec-8b2e-34a89c073f2b
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_cta_theme
+field_name: field_cta_theme
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bordered
+      label: Bordered
+    -
+      value: background_color
+      label: 'Background Color'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

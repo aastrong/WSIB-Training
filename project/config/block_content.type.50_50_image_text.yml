@@ -1,0 +1,8 @@
+uuid: 681382e4-0f47-45d3-9272-8e243d48bb67
+langcode: en
+status: true
+dependencies: {  }
+id: 50_50_image_text
+label: '50/50 Image & Text'
+revision: false
+description: null

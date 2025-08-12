@@ -1,0 +1,25 @@
+uuid: e0935c31-ba44-42dd-9c48-c58962aade95
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wsib
+_core:
+  default_config_hash: WqMbA2lmwpe-vclGBiZr8qWEpKLI-kXKRVVaIaoUlyw
+id: wsib_site_branding
+theme: wsib
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

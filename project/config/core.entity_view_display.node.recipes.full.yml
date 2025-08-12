@@ -1,0 +1,332 @@
+uuid: 6bd5045d-3df6-46ce-a02e-dbeb63e4ef88
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.recipes.field_body
+    - field.field.node.recipes.field_featured
+    - field.field.node.recipes.field_featured_image
+    - field.field.node.recipes.field_ingredients
+    - field.field.node.recipes.field_prep_time
+    - field.field.node.recipes.field_recipe_type
+    - field.field.node.recipes.field_total_time
+    - field.field.node.recipes.layout_builder__layout
+    - node.type.recipes
+    - views.view.recipes
+  module:
+    - bootstrap_layout_builder
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: 'bootstrap_layout_builder:blb_col_1'
+        layout_settings:
+          label: ''
+          container_wrapper_classes: ''
+          container_wrapper_attributes: null
+          container_wrapper:
+            bootstrap_styles:
+              background:
+                background_type: null
+              background_color:
+                class: null
+              background_media:
+                image:
+                  media_id: null
+                video:
+                  media_id: null
+                background_options:
+                  background_position: center
+                  background_repeat: no-repeat
+                  background_attachment: not_fixed
+                  background_size: cover
+              text_color:
+                class: null
+              padding:
+                class: _none
+              padding_left:
+                class: _none
+              padding_top:
+                class: _none
+              padding_right:
+                class: _none
+              padding_bottom:
+                class: _none
+              margin:
+                class: _none
+              margin_left:
+                class: _none
+              margin_top:
+                class: _none
+              margin_right:
+                class: _none
+              margin_bottom:
+                class: _none
+              border:
+                border_style:
+                  class: null
+                border_width:
+                  class: _none
+                border_color:
+                  class: null
+                rounded_corners:
+                  class: _none
+                border_left_style:
+                  class: null
+                border_left_width:
+                  class: _none
+                border_left_color:
+                  class: null
+                border_top_style:
+                  class: null
+                border_top_width:
+                  class: _none
+                border_top_color:
+                  class: null
+                border_right_style:
+                  class: null
+                border_right_width:
+                  class: _none
+                border_right_color:
+                  class: null
+                border_bottom_style:
+                  class: null
+                border_bottom_width:
+                  class: _none
+                border_bottom_color:
+                  class: null
+                rounded_corner_top_left:
+                  class: _none
+                rounded_corner_top_right:
+                  class: _none
+                rounded_corner_bottom_left:
+                  class: _none
+                rounded_corner_bottom_right:
+                  class: _none
+              scroll_effects:
+                class: null
+              text_alignment:
+                class: null
+              box_shadow:
+                class: null
+          container_wrapper_bg_color_class: ''
+          container_wrapper_bg_media: null
+          container: container
+          section_classes: ''
+          section_attributes: null
+          regions_classes:
+            blb_region_col_1: ''
+          regions_attributes:
+            blb_region_col_1: null
+          breakpoints: {  }
+          layout_regions_classes: {  }
+          remove_gutters: '0'
+          context_mapping: {  }
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          01ad354e-a89d-4f96-a318-74b561d2dbe2:
+            uuid: 01ad354e-a89d-4f96-a318-74b561d2dbe2
+            region: content
+            configuration:
+              id: 'field_block:node:recipes:field_featured_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: hero
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          1f48b3ea-5488-45ca-a0de-bd354dd69e71:
+            uuid: 1f48b3ea-5488-45ca-a0de-bd354dd69e71
+            region: content
+            configuration:
+              id: 'extra_field_block:node:recipes:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          6b6255b6-cd13-48fb-bc89-bac7343e0a5a:
+            uuid: 6b6255b6-cd13-48fb-bc89-bac7343e0a5a
+            region: content
+            configuration:
+              id: 'field_block:node:recipes:field_body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          f01be6f8-66f3-48e0-96e3-ae3d01764036:
+            uuid: f01be6f8-66f3-48e0-96e3-ae3d01764036
+            region: content
+            configuration:
+              id: 'field_block:node:recipes:field_ingredients'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          7963c96a-71e5-414d-b732-4cedb5040783:
+            uuid: 7963c96a-71e5-414d-b732-4cedb5040783
+            region: content
+            configuration:
+              id: 'field_block:node:recipes:field_prep_time'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          08c38882-1e09-4396-b08d-02b03b05eb71:
+            uuid: 08c38882-1e09-4396-b08d-02b03b05eb71
+            region: content
+            configuration:
+              id: 'field_block:node:recipes:field_total_time'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          10baa6cc-6293-46ad-b50d-70581ece0bc1:
+            uuid: 10baa6cc-6293-46ad-b50d-70581ece0bc1
+            region: content
+            configuration:
+              id: 'field_block:node:recipes:field_recipe_type'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          cc8c2308-cd26-4de8-88d9-1fb5600e6eec:
+            uuid: cc8c2308-cd26-4de8-88d9-1fb5600e6eec
+            region: content
+            configuration:
+              id: 'views_block:recipes-block_3'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: 0
+            weight: 7
+            additional: {  }
+        third_party_settings: {  }
+id: node.recipes.full
+targetEntityType: node
+bundle: recipes
+mode: full
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_featured_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: hero
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_ingredients:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_prep_time:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_recipe_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_total_time:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_featured: true
+  langcode: true
+  layout_builder__layout: true

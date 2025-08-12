@@ -1,0 +1,23 @@
+uuid: 83aefae4-14ae-47fc-821f-6609e98ba95b
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - wsib
+_core:
+  default_config_hash: g-kwj0SRZvdDAIfGB-61Y-6lpDP-Rf0uLN2S3jFFjHY
+id: wsib_search_form_wide
+theme: wsib
+region: top_header_form
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

@@ -1,0 +1,30 @@
+uuid: 39a9a868-230b-4ddd-8287-f769690fb2ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.slideshow_desktop
+    - image.style.slideshow_mobile
+    - image.style.slideshow_tablet
+  theme:
+    - olivero
+id: slideshow
+label: Slideshow
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: slideshow_desktop
+    breakpoint_id: olivero.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slideshow_tablet
+    breakpoint_id: olivero.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slideshow_mobile
+    breakpoint_id: olivero.sm
+    multiplier: 1x
+breakpoint_group: olivero
+fallback_image_style: slideshow_desktop

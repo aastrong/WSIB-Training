@@ -1,0 +1,22 @@
+uuid: 1b693f7e-e7a9-42e7-979f-621070dac81b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wsib
+_core:
+  default_config_hash: IJxHhRWTWoR_d7YJMuddpbJhwojx_k-0MagMlfjyYvs
+id: wsib_breadcrumbs
+theme: wsib
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

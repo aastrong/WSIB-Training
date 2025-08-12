@@ -1,0 +1,17 @@
+uuid: 14ad5553-4b75-4428-8572-12887d005660
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: slideshow_desktop
+label: 'Slideshow Desktop'
+effects:
+  d98e557d-593f-46df-8095-052e173dc6dd:
+    uuid: d98e557d-593f-46df-8095-052e173dc6dd
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 600
+      crop_type: focal_point

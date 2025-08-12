@@ -1,0 +1,20 @@
+uuid: fd0c3233-d62a-42c0-9682-df8aeafc3742
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wsib
+_core:
+  default_config_hash: Ef4iOIiqIK2JYviCTPoJalOQC2XidkrmBJeORMYcqwQ
+id: wsib_primary_admin_actions
+theme: wsib
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

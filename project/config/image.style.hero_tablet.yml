@@ -1,0 +1,17 @@
+uuid: d85f590b-e9bd-4f74-8af9-04cf9fd59960
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: hero_tablet
+label: 'Hero Tablet'
+effects:
+  2a6e2efe-235a-45da-94ae-95824ce2c0cb:
+    uuid: 2a6e2efe-235a-45da-94ae-95824ce2c0cb
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 600
+      crop_type: focal_point

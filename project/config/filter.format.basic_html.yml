@@ -4,11 +4,12 @@ status: true
 dependencies:
   module:
     - editor
+    - slick
 _core:
   default_config_hash: mclCbTlJwWJORez4Y1eX2MqA0aGjSMAoJb3TaBABcK8
 name: 'Basic HTML'
 format: basic_html
-weight: 0
+weight: -9
 filters:
   editor_file_reference:
     id: editor_file_reference
@@ -49,3 +50,11 @@ filters:
     status: true
     weight: 15
     settings: {  }
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''

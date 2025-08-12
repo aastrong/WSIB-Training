@@ -1,0 +1,64 @@
+display:
+  default:
+    display_title: Principal
+    display_options:
+      fields:
+        id:
+          label: 'Identifiant (ID)'
+          separator: ', '
+        image__target_id:
+          label: Image
+          separator: ', '
+        label:
+          label: Libellé
+          separator: ', '
+        type:
+          label: Type
+          separator: ', '
+        entity_id:
+          separator: ', '
+        created:
+          label: Créé
+          separator: ', '
+        changed:
+          label: Modifié
+          separator: ', '
+        user_id:
+          label: 'Écrit par'
+          separator: ', '
+        operations:
+          label: "Liens d'actions"
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« Premier'
+            last: 'Dernier »'
+          expose:
+            items_per_page_label: 'Éléments par page'
+            items_per_page_options_all_label: '- Tout -'
+            offset_label: Décalage
+      exposed_form:
+        options:
+          submit_button: Filtrer
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        label:
+          expose:
+            label: Libellé
+        type:
+          expose:
+            label: Type
+          group_info:
+            label: Type
+            group_items:
+              1:
+                title: Section
+              2:
+                title: Gabarit
+  page_section_library:
+    display_title: Page

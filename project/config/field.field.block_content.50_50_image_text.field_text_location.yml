@@ -1,0 +1,23 @@
+uuid: d25ed448-aaf8-4053-b732-d922e67b2077
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.50_50_image_text
+    - field.storage.block_content.field_text_location
+  module:
+    - options
+id: block_content.50_50_image_text.field_text_location
+field_name: field_text_location
+entity_type: block_content
+bundle: 50_50_image_text
+label: 'Text Location'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: text_left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

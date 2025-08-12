@@ -1,0 +1,21 @@
+uuid: 0bd69b77-a489-4081-adb0-8eea7625c4e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_total_time
+field_name: field_total_time
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

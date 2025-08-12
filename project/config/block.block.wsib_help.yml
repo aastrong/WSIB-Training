@@ -1,0 +1,22 @@
+uuid: 4dcbb04b-a856-4651-b39a-8ba9be597e58
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - wsib
+_core:
+  default_config_hash: h_0oEp9T236Btn5E_GmNW7-MSySL95BYpIpnswTyHvg
+id: wsib_help
+theme: wsib
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

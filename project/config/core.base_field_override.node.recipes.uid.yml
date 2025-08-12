@@ -1,0 +1,20 @@
+uuid: b03f9b39-6bd9-4097-a954-11edceee3311
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recipes
+id: node.recipes.uid
+field_name: uid
+entity_type: node
+bundle: recipes
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: c4437501-df83-4846-bb84-943d672cb664
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recipes
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.recipes
+target_entity_type_id: node
+target_bundle: recipes
+default_langcode: site_default
+language_alterable: true

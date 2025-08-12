@@ -1,0 +1,140 @@
+uuid: 87eaeb6b-705c-4414-83b0-a61fdf6e2134
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.50_50_image_text
+    - field.field.block_content.50_50_image_text.body
+    - field.field.block_content.50_50_image_text.field_cta_link
+    - field.field.block_content.50_50_image_text.field_image
+    - field.field.block_content.50_50_image_text.field_text_location
+  module:
+    - field_layout
+    - layout_builder
+    - layout_discovery
+    - link
+    - options
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          4aac863a-6eb8-4e52-a39d-ea4036d3459f:
+            uuid: 4aac863a-6eb8-4e52-a39d-ea4036d3459f
+            region: content
+            configuration:
+              id: 'field_block:block_content:50_50_image_text:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          84f9d5ca-16f0-4077-b7a0-0bbc29cbc849:
+            uuid: 84f9d5ca-16f0-4077-b7a0-0bbc29cbc849
+            region: content
+            configuration:
+              id: 'field_block:block_content:50_50_image_text:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          c82854dd-89f9-4d48-b945-33d3ff5fa69c:
+            uuid: c82854dd-89f9-4d48-b945-33d3ff5fa69c
+            region: content
+            configuration:
+              id: 'field_block:block_content:50_50_image_text:field_cta_link'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          31f9f924-f59d-4566-ab35-262c332ae860:
+            uuid: 31f9f924-f59d-4566-ab35-262c332ae860
+            region: content
+            configuration:
+              id: 'field_block:block_content:50_50_image_text:field_text_location'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.50_50_image_text.default
+targetEntityType: block_content
+bundle: 50_50_image_text
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_cta_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text_location:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  langcode: true

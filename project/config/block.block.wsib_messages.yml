@@ -1,0 +1,22 @@
+uuid: 2cabd54d-7b80-4ee4-89ef-bbc52255a2ef
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wsib
+_core:
+  default_config_hash: XuspVdPyTMaUhYB4WXDVezHcUpTqZvecm4TlHqxsI0c
+id: wsib_messages
+theme: wsib
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

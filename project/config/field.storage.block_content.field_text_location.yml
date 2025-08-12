@@ -1,0 +1,27 @@
+uuid: ec4f5639-b992-415b-9bd6-c3c87b4b1e09
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_text_location
+field_name: field_text_location
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: text_left
+      label: 'Text Left'
+    -
+      value: text_right
+      label: 'Text Right'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

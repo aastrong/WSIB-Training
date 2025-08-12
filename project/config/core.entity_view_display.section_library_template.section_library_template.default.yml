@@ -1,0 +1,36 @@
+uuid: ddb90e95-a7d0-4b5e-8326-c7426e66da9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - image
+    - section_library
+_core:
+  default_config_hash: CmdlHGBt-bg5HXOaUYwkzBldiKnlo9ppDdcoA3_0aJs
+id: section_library_template.section_library_template.default
+targetEntityType: section_library_template
+bundle: section_library_template
+mode: default
+content:
+  image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  user_id: true

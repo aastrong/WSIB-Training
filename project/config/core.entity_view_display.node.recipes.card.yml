@@ -1,0 +1,93 @@
+uuid: eea589f6-2202-4ff7-b90f-5430075bd635
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.recipes.field_body
+    - field.field.node.recipes.field_featured
+    - field.field.node.recipes.field_featured_image
+    - field.field.node.recipes.field_ingredients
+    - field.field.node.recipes.field_prep_time
+    - field.field.node.recipes.field_recipe_type
+    - field.field.node.recipes.field_total_time
+    - field.field.node.recipes.layout_builder__layout
+    - node.type.recipes
+  module:
+    - field_layout
+    - layout_builder
+    - layout_builder_restrictions
+    - text
+    - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+  layout_builder_restrictions:
+    allowed_block_categories: {  }
+    entity_view_mode_restriction:
+      allowed_layouts: {  }
+      denylisted_blocks: {  }
+      allowlisted_blocks: {  }
+      restricted_categories: {  }
+    entity_view_mode_restriction_by_region:
+      allowed_layouts: {  }
+id: node.recipes.card
+targetEntityType: node
+bundle: recipes
+mode: card
+content:
+  field_body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_featured_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: card
+      link: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_ingredients:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_prep_time:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_total_time:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_featured: true
+  field_recipe_type: true
+  langcode: true
+  layout_builder__layout: true

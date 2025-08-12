@@ -1,12 +1,14 @@
 uuid: d483a9f2-52ec-46fb-b651-3ed1e8ed6217
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - slick
 _core:
   default_config_hash: JLMwODO0epnA_H-jFlH9ezVfa5YBJniRv3MmLqYNl_Q
 name: 'Plain text'
 format: plain_text
-weight: 10
+weight: -7
 filters:
   filter_autop:
     id: filter_autop
@@ -27,3 +29,11 @@ filters:
     weight: 0
     settings:
       filter_url_length: 72
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      media_switch: ''

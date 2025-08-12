@@ -1,0 +1,18 @@
+name: Simple
+type: theme
+description: 'A simple theme setup for WSIB Training'
+core_version_requirement: ^8 || ^9 || ^10 || ^11
+base theme: false
+
+regions:
+  header_utility: Header Utility
+  header_menu: Header menu
+  pre_content: Pre-content
+  content: Content
+  sidebar: sidebar
+  post_content: Featured bottom
+  footer_logo: Footer logo
+  footer_menu: Footer menu
+
+libraries:
+  - simple/global-styling

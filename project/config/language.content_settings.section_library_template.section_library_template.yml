@@ -1,0 +1,11 @@
+uuid: 349ac417-ad38-469c-a076-7091c3079cf8
+langcode: en
+status: true
+dependencies:
+  module:
+    - section_library
+id: section_library_template.section_library_template
+target_entity_type_id: section_library_template
+target_bundle: section_library_template
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,17 @@
+uuid: ad0303d2-8011-408c-9316-40e8676fd1e0
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: card_desktop
+label: 'Card Desktop'
+effects:
+  28fc4855-268a-4a06-a69d-0b8ae36fde4d:
+    uuid: 28fc4855-268a-4a06-a69d-0b8ae36fde4d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 500
+      crop_type: focal_point

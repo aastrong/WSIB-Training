@@ -1,0 +1,19 @@
+uuid: 716497b7-8741-4716-bad9-c8b1f2c59f51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prep_time
+    - node.type.recipes
+id: node.recipes.field_prep_time
+field_name: field_prep_time
+entity_type: node
+bundle: recipes
+label: 'Prep time'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

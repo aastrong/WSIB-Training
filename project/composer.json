@@ -14,11 +14,32 @@
             "url": "https://packages.drupal.org/8"
         }
     ],
+    
     "require": {
         "composer/installers": "^2.3",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.6",
+        "drupal/better_exposed_filters": "^7.1@beta",
+        "drupal/bootstrap_barrio": "^5.5",
+        "drupal/bootstrap_layout_builder": "^2.2",
         "drupal/core-composer-scaffold": "^11.0",
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
+        "drupal/devel": "^5.4",
+        "drupal/focal_point": "^2.1",
+        "drupal/gin": "^5.0",
+        "drupal/layout_builder_lock": "^2.0@RC",
+        "drupal/layout_builder_modal": "^2.0",
+        "drupal/layout_builder_restrictions": "^3.0",
+        "drupal/media_entity_browser": "^3.0",
+        "drupal/pathauto": "^1.13",
+        "drupal/search_api": "^1.38",
+        "drupal/section_library": "^2.0",
+        "drupal/slick": "^3.0",
+        "drupal/slick_views": "^3.0",
+        "drupal/views_bootstrap": "^5.5@RC",
+        "drupal/views_load_more": "^2.0",
+        "drupal/webform": "^6.2",
         "drush/drush": "^13.2"
     },
     "require-dev": {
@@ -32,6 +53,7 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
@@ -45,6 +67,12 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            }
+        },
+        "enable-patching": true,
+        "patches": {
+            "drupal/views_load_more": {
+                "#3496870: Fixing ajax issues on Drupal 11 with Views load more": "https://www.drupal.org/files/issues/2025-01-25/issue-with-ajax-functionality-and-drupal-11-3496870-3.patch"
             }
         },
         "installer-paths": {

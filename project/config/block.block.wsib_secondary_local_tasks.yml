@@ -1,0 +1,22 @@
+uuid: ab910a98-4e06-4dc2-9874-e6c0f5366e99
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wsib
+_core:
+  default_config_hash: NBqIsf0gDQnEYPEuBhhc-qYsYrx2fahFj8vZgkyBNQc
+id: wsib_secondary_local_tasks
+theme: wsib
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

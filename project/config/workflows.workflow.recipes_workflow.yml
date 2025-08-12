@@ -1,0 +1,51 @@
+uuid: 6e51eba1-ad1b-4c11-ade2-e082422d1f77
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.recipes
+  module:
+    - content_moderation
+id: recipes_workflow
+label: 'Recipes workflow'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Draft
+      weight: 0
+      published: false
+      default_revision: false
+    needs_review:
+      label: 'Needs Review'
+      weight: 2
+      published: false
+      default_revision: false
+    published:
+      label: Published
+      weight: 1
+      published: true
+      default_revision: true
+  transitions:
+    create_new_draft:
+      label: 'Create New Draft'
+      from:
+        - draft
+      to: draft
+      weight: 0
+    draft_to_published:
+      label: 'Draft to Needs Review'
+      from:
+        - draft
+      to: needs_review
+      weight: 2
+    publish:
+      label: Publish
+      from:
+        - needs_review
+      to: published
+      weight: 1
+  entity_types:
+    node:
+      - recipes
+  default_moderation_state: draft

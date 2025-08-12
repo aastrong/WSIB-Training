@@ -1,0 +1,19 @@
+uuid: dbd7645b-1c1b-4954-ab19-049409837103
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_total_time
+    - node.type.recipes
+id: node.recipes.field_total_time
+field_name: field_total_time
+entity_type: node
+bundle: recipes
+label: 'Total time'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

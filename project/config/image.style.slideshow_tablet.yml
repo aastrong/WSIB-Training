@@ -1,0 +1,17 @@
+uuid: 27ed602d-3459-4262-97fb-b3a941c07634
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: slideshow_tablet
+label: 'Slideshow Tablet'
+effects:
+  b26b74e7-b412-42ad-a1d0-6ce6a0c02b8a:
+    uuid: b26b74e7-b412-42ad-a1d0-6ce6a0c02b8a
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1000
+      height: 400
+      crop_type: focal_point

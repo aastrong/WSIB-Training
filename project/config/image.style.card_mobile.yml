@@ -1,0 +1,17 @@
+uuid: ea86fbc2-c31a-42cf-b27a-aec11f2ef629
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: card_mobile
+label: 'Card Mobile'
+effects:
+  0967ce9f-2adb-479e-81d9-5256521727e2:
+    uuid: 0967ce9f-2adb-479e-81d9-5256521727e2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 600
+      crop_type: focal_point

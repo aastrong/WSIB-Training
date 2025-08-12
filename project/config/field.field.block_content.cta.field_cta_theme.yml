@@ -1,0 +1,23 @@
+uuid: 07de4dee-298a-4063-97b2-66341d3f146c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta
+    - field.storage.block_content.field_cta_theme
+  module:
+    - options
+id: block_content.cta.field_cta_theme
+field_name: field_cta_theme
+entity_type: block_content
+bundle: cta
+label: 'CTA theme'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: bordered
+default_value_callback: ''
+settings: {  }
+field_type: list_string

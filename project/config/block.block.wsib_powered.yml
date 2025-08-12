@@ -1,0 +1,22 @@
+uuid: 2a4cde73-2b5e-416a-bf1e-5853593fe187
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wsib
+_core:
+  default_config_hash: cB-yFNIjaP3xL2ssfBYAYlLR_3mirNlhOIo7KuMcUUs
+id: wsib_powered
+theme: wsib
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

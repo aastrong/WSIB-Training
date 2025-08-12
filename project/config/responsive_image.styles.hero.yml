@@ -1,0 +1,30 @@
+uuid: e17b0c46-cd3e-44fe-bb3f-3d2fb47c25d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.hero_desktop
+    - image.style.hero_mobile
+    - image.style.hero_tablet
+  theme:
+    - olivero
+id: hero
+label: Hero
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_desktop
+    breakpoint_id: olivero.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_tablet
+    breakpoint_id: olivero.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: hero_mobile
+    breakpoint_id: olivero.sm
+    multiplier: 1x
+breakpoint_group: olivero
+fallback_image_style: hero_desktop

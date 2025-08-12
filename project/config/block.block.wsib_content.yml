@@ -1,0 +1,22 @@
+uuid: e7b80cc4-837c-47a3-8843-ffc5d9e36858
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wsib
+_core:
+  default_config_hash: 9CTRSKJN-jW3HUJVmQ0tFYHfDIw_vmfSFJ5RPvN53cU
+id: wsib_content
+theme: wsib
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

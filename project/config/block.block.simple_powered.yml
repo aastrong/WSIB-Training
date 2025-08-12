@@ -1,0 +1,22 @@
+uuid: e17c3592-93f1-4cf7-9c2b-b458a263d316
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - simple
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: simple_powered
+theme: simple
+region: header_utility
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

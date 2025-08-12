@@ -1,0 +1,17 @@
+uuid: 66f349f6-7dd0-4cd8-bdc9-3af57542310e
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: slideshow_mobile
+label: 'Slideshow Mobile'
+effects:
+  0d50fd49-c156-488b-9d42-392407cdb2b5:
+    uuid: 0d50fd49-c156-488b-9d42-392407cdb2b5
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 500
+      height: 500
+      crop_type: focal_point
