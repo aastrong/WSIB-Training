@@ -1,0 +1,21 @@
+.header-alert--wrapper {
+    background: $alert-red;
+    padding: $header-padding;
+
+    .container {
+        color: $white;
+
+        strong {
+            font-size: $h2;
+        }
+
+        a {
+            color: $white;
+
+            &:hover {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.navbar {
+    &-top {
+        &--wrapper {
+            padding: $header-padding;
+            background: $top-header-bg;
+
+            a {
+                color: $top-header-link;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $white;
+                }
+            }
+        }
+    }
+    &-main {
+        &--wrapper {
+            padding: $header-padding;
+            background: $main-header-bg;
+
+            .navbar-expand-lg ul.navbar-nav {
+                li {
+                    a {
+                        background: $main-header-link-bg;
+                        color: $main-header-link-color;
+                        border-radius: $card-radius;
+                        padding: 10px 20px;
+                        border: 2px solid $main-header-link-border;
+                        margin-left: 10px;
+
+                        &:hover {
+                            background: $main-header-link-bg-hover;
+                            color: $main-header-link-color-hover;
+                        }
+                    }
+
+                    ul {
+                        li {
+                            a {
+                                background: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-expand-lg .navbar-collapse {
+    flex-grow: 0;
+}
