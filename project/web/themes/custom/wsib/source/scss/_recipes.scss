@@ -1,0 +1,49 @@
+.node--type-recipes {
+    .recipes-top {
+        .field--type-image {
+            float: none;
+
+            img, picture {
+                width: 100%;
+            }
+        }
+    }
+
+    .recipes-main {
+        .recipes-time {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            background: $top-header-link;
+            padding: 15px;
+            margin: 15px 0;
+
+            .field__label {
+                font-weight: bold;
+            }
+        }
+        .col-md-3 {
+            .field__label {
+                font-weight: bold;
+            }
+
+            .field {
+                margin-bottom: 30px;
+                 background: $top-header-link;
+                 padding: 15px;
+                 border-radius: 15px;
+            }
+        }
+    }
+}
+
+
+.recipes-card {
+    .recipe-body {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+    }
+}

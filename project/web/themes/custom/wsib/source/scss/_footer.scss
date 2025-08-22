@@ -1,3 +1,50 @@
-footer {
-    background: black;
+footer.site-footer {
+    background: $footer;
+    padding: 0;
+    margin-top: 30px;
+
+    ul.nav {
+        flex-direction: column !important;
+
+        li {
+            a {
+                display: block;
+                padding: 0;
+                margin-bottom: 15px;
+                color: $white;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .footer-top {
+        background: $footer-top;
+        color: $body-color;
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        background: $footer-bottom;
+        color: $white;
+        padding: 20px 0;
+        margin-top: 20px;
+
+        a {
+            color: $white;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .site-footer__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
