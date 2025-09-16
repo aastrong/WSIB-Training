@@ -1,0 +1,14 @@
+<div {{ attributes.addClass('featured-card') }}>
+    <div class="featured-card-image">
+        {{ featured_card_image }}
+    </div>
+    <div class="featured-card-body">
+        <h2 class="featured-card-title">
+            {{ featured_card_title }}
+        </h2>
+        <p class="featured-card-text">
+            {{ featured_card_body }}
+        </p>
+        <a href="{{ featured_card_link }}" class="featured-card-link btn btn-primary" aria-label="Go to recipe for recipe">{{ featured_card_link_text }}</a>
+    </div>
+</div>

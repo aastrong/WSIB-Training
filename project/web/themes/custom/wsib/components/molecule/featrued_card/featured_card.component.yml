@@ -1,0 +1,37 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Featured Card
+description: This is for a featured card. It will display on all pages, and show the most recent featured card. It will always have a title, body, image, and CTA.
+status: experimental
+props:
+  type: object
+  required:
+    - featured_card_title
+    - featured_card_image
+    - featured_card_link
+    - featured_card_link_text
+    - featured_card_body
+  properties:
+    featured_card_title:
+      type: string
+      title: Card title
+      description: This is the card title.
+      examples:
+        - I am a card title. I go just below the image.
+    featured_card_image:
+      type: string
+      title: Card image
+      description: This is the image for the card, it goes at the top of the card.
+    featured_card_body:
+      type: string
+      title: Card body
+      description: This is the card body text
+      examples:
+        - Cui nisl nutus scisco sudo usitas zelus. Acsi consectetuer diam in jugis letalis metuo quae venio vulputate.
+    featured_card_link:
+      type: string
+      title: Card link
+      description: This is the card link.
+    featured_card_link_text:
+      type: string
+      title: Card link text
+      description: This is the link text that goes in a card.
