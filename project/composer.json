@@ -14,7 +14,6 @@
             "url": "https://packages.drupal.org/8"
         }
     ],
-    
     "require": {
         "composer/installers": "^2.3",
         "cweagans/composer-patches": "^1.7",
@@ -26,13 +25,18 @@
         "drupal/core-project-message": "^11.0",
         "drupal/core-recommended": "^11.0",
         "drupal/devel": "^5.4",
+        "drupal/easy_breadcrumb": "^2.0",
+        "drupal/embedded_content": "^2.0",
+        "drupal/entity_clone": "^2.1@beta",
         "drupal/focal_point": "^2.1",
         "drupal/gin": "^5.0",
         "drupal/layout_builder_lock": "^2.0@RC",
         "drupal/layout_builder_modal": "^2.0",
         "drupal/layout_builder_restrictions": "^3.0",
+        "drupal/linkit": "^7.0",
         "drupal/media_entity_browser": "^3.0",
         "drupal/pathauto": "^1.13",
+        "drupal/sdc_display": "^2.0@beta",
         "drupal/search_api": "^1.38",
         "drupal/section_library": "^2.0",
         "drupal/slick": "^3.0",
@@ -40,8 +44,9 @@
         "drupal/storybook": "^1.0",
         "drupal/views_bootstrap": "^5.5@RC",
         "drupal/views_load_more": "^2.0",
-        "drupal/webform": "^6.2",
-        "drush/drush": "^13.2"
+        "drupal/webform": "^6.3@beta",
+        "drush/drush": "^13.2",
+        "league/commonmark": "^2.7"
     },
     "require-dev": {
         "drupal/core-dev": "^11"

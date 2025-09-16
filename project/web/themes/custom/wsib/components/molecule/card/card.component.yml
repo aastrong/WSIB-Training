@@ -1,5 +1,6 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
 name: Card
+description: This is the component for all cards on the website. It has a required field for image, title and link. Everything else is optional.
 status: experimental
 props:
   type: object
