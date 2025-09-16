@@ -37,6 +37,7 @@
         "drupal/section_library": "^2.0",
         "drupal/slick": "^3.0",
         "drupal/slick_views": "^3.0",
+        "drupal/storybook": "^1.0",
         "drupal/views_bootstrap": "^5.5@RC",
         "drupal/views_load_more": "^2.0",
         "drupal/webform": "^6.2",

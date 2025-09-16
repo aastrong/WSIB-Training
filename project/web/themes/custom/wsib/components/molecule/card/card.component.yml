@@ -1,0 +1,42 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Card
+status: experimental
+props:
+  type: object
+  required:
+    - card_title
+    - card_image
+    - card_link
+  properties:
+    card_title:
+      type: string
+      title: Card title
+      description: This is the card title.
+      examples:
+        - I am a card title. I go just below the image.
+    card_image:
+      type: string
+      title: Card image
+      description: This is the image for the card, it goes at the top of the card.
+    card_body:
+      type: string
+      title: Card body
+      description: This is the card body text
+      examples:
+        - Cui nisl nutus scisco sudo usitas zelus. Acsi consectetuer diam in jugis letalis metuo quae venio vulputate.
+    card_link:
+      type: string
+      title: Card link
+      description: This is the card link.
+    card_link_text:
+      type: string
+      title: Card link text
+      description: This is the link text that goes in a card.
+    card_prep_time:
+      type: string
+      title: Prep time
+      description: 30 min prep time
+    card_total_time:
+      type: string
+      title: Total time
+      description: 2h 45m

@@ -75,35 +75,14 @@
 %}
 <article{{ attributes.addClass(classes) }}>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
-  <div class="card"">
-    {% if content.field_featured_image.0 %}
-      <div class="class="card-img-top">
-        {{ content.field_featured_image }}
-      </div>
-    {% endif %}
-    <div class="card-body">
-      <h2 class="card-title">{{ label }}</h2>
-      {% if content.field_featured_image.0 %}
-        <p class="card-text recipe-body">
-          {{ content.field_body }}
-        </p>
-      {% endif %}
-    </div>
-    {% if content.field_prep_time.0 or content.field_total_time.0 %}
-      <div class="card-body">
-        <div class="recipes-time">
-          <div class="preptime">
-            {{ content.field_prep_time }}
-          </div>
-          <div class="total-time">
-            {{ content.field_total_time }}
-          </div>
-        </div>
-      </div>
-    {% endif %}
-    <div class="card-body">
-      <a href="{{ url }}" class="btn btn-primary" aria-label="{{ 'Go to recipe for'|t }} {{ node.label }}">{{ 'Go to Recipe'|t }}</a>
-    </div>
-  </div>
+    {% include 'wsib:card' with {
+      card_title: label,
+      card_body: content.field_body,
+      card_image: content.field_featured_image,
+      card_prep_time: content.field_prep_time,
+      card_total_time: content.field_total_time,
+      card_link: url,
+      card_link_text: 'Go to Recipe'
+    } %}
   </div>
 </article>

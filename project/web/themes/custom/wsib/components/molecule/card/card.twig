@@ -1,0 +1,26 @@
+<div {{ attributes.addClass('card') }}>
+    <div class="card-img-top">
+        {{ card_image }}
+    </div>
+    <div class="card-body">
+        <h2 class="card-title">
+            {{ card_title }}
+        </h2>
+        <p class="card-text recipe-body">
+            {{ card_body }}
+        </p>
+    </div>
+    <div class="card-body">
+        <div class="recipes-time">
+            <div class="preptime">
+                {{ card_prep_time }}
+            </div>
+            <div class="total-time">
+                {{ card_total_time }}
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <a href="{{ card_link }}" class="btn btn-primary" aria-label="Go to recipe for recipe">{{ card_link_text }}</a>
+    </div>
+</div>

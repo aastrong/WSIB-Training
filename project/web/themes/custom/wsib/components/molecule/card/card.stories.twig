@@ -1,0 +1,28 @@
+{% stories card with { title: 'Components/Molecule/Card' } %}
+
+  {% story default with {
+    name: '1. Default',
+    args: { 
+        card_title: 'I am a header!',
+        card_body: 'I am some body text to go into our card body in our stories. This gets restricted to 4 lines of text.',
+        card_image: 'https://picsum:photos/seed/affse3/1200/150',
+        card_prep_time: '30+ min',
+        card_total_time: '3h 45min',
+        card_link: 'https://www.example.org',
+        card_link_text: 'Link to my article
+    }
+  } %}
+    {# Write any Twig for the "default" story. The `args` above will be #}
+    {# made available as variables for the template 👇 #}
+    {% include 'wsib:card' with {
+      card_title: 'I am a header!',
+      card_body: 'I am some body text to go into our card body in our stories. This gets restricted to 4 lines of text.',
+      card_image: 'https://picsum:photos/seed/affse3/1200/150',
+      card_prep_time: '30+ min',
+      card_total_time: '3h 45min',
+      card_link: 'https://www.example.org',
+      card_link_text: 'Link to my article
+    } %}
+  {% endstory %}
+
+{% endstories %}
